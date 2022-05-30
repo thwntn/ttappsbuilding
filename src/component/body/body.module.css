@@ -1,0 +1,118 @@
+.body {
+    font-size: 0.85rem;
+}
+.navigation {
+    padding: 32px 72px;
+    padding-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 174px;
+}
+.nav {
+    display: flex;
+}
+.select,
+.listChoose,
+.filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+    margin: 0;
+}
+.navigation ul > li {
+    padding: 12px 12px;
+    white-space: nowrap;
+}
+.navigation .filters button {
+    padding: 8px 12px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    background: none;
+    border-radius: 8px;
+}
+.select select {
+    height: 40px;
+    background-color: #fff;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 6px 8px;
+    width: 100%;
+}
+.select select:focus {
+    border: 2px solid rgba(255, 0, 85, 0.2);
+    outline: none;
+}
+.navFilters {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1;
+}
+.navFilters label {
+    width: 100%;
+    text-align: left;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+.navFilters .iconSearch {
+    margin-left: -20px;
+}
+.filterColor {
+    position: relative;
+    height: 40px;
+}
+.filterColor input::placeholder {
+    color: #999;
+}
+.iconFilterColor::before {
+    display: block;
+    content: "#";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    z-index: 2;
+    top: -4px;
+    left: 22px;
+    font-size: 16px;
+}
+.iconFilterColor {
+    position: absolute;
+    top: 30%;
+    left: 12px;
+    z-index: 2;
+    width: 16px;
+    height: 16px;
+    background-image: url(../../icons/color.png);
+    background-size: 100%;
+}
+.navFilters input {
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    background-color: #f3f3f4;
+    width: 100%;
+    outline: none;
+    padding: 0px 24px 0px 12px;
+}
+.filterColor input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding-left: 42px;
+}
+.filterColor input {
+    padding-left: 54px;
+}
+.navFilters > div {
+    width: 100%;
+}

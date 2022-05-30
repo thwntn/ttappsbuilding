@@ -1,0 +1,185 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    padding: 0px 32px;
+    font-size: 0.85rem;
+}
+.headerLeft {
+    display: flex;
+    flex-wrap: wrap;
+}
+.logo {
+    background-image: url(./image/Logo.png);
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 64px;
+    margin: 0px 12px;
+}
+.headerLeft .selects {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.headerLeft .selects > li {
+    position: relative;
+    display: flex;
+    line-height: 48px;
+    padding: 0px 32px;
+    align-items: center;
+}
+@keyframes anishow {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+.headerLeft .selects li > .subSelectsType {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.035);
+    background-color: #fff;
+    animation: anishow 0.3s linear;
+    overflow: hidden;
+}
+.headerLeft .selects li > div ul {
+    margin: 0;
+    padding: 12px 24px;
+    padding-right: 0px;
+}
+.headerLeft .selects > li:hover {
+    color: rgb(255, 0, 76);
+}
+.selects > li > div {
+    display: none;
+    position: absolute;
+    top: 58px;
+    left: -32px;
+    color: #333 !important;
+    border-radius: 12px;
+}
+.selects li div ul {
+    list-style: none;
+}
+.headerLeft .selects > li:hover > div {
+    display: flex;
+}
+.subSelectsType li {
+    text-align: left;
+}
+.icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rebeccapurple;
+    background-color: rgba(0, 0, 0, 0.06);
+    border-radius: 6px;
+}
+.selects > li > div > ul > li {
+    display: flex;
+    align-items: center;
+}
+.itemLeft {
+    padding: 15px 0px;
+}
+.selects .content {
+    padding-left: 12px;
+    width: 200px;
+}
+.selects > li > div > ul > li:hover .go button{
+    display: block;
+}
+.content h5 {
+    font-size: 0.85rem;
+}
+.selects > li > div > ul > li:hover .icon {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.subItem {
+    font-size: 0.7rem !important;
+    color: #999;
+}
+.go {
+    width: 64px;
+    display: flex;
+    justify-content: center;
+    padding: 0px 16px;
+}
+.go button {
+    color: rebeccapurple;
+    display: none;
+    background: none;
+    border: none;
+    animation: anibutton 0.3s linear;
+}
+@keyframes anibutton {
+    from {
+        transform: translateX(-10px);
+        opacity: 0;
+    } to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.others {
+    display: flex;
+    justify-content: space-between;
+}
+.subSelectsTypeRight {
+    background-color: rgba(0, 0, 255, 0.01);
+    padding: 0px 24px !important;
+}
+.subSelectsTypeRight li {
+    color: #777;
+}
+.subSelectsTypeRight li:hover {
+    color:  #000;
+}
+.imgUser {
+    width: 32px;
+    height: 32px;
+    background-color: rgba(0, 0, 0, 0.035);
+    border-radius: 100%;
+    margin: 0px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headerRight {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: right;
+}
+.search {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.searchIcon {
+    margin-left: -24px;
+}
+.search input {
+    padding: 5px 14px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.035);
+    border-radius: 8px;
+    width: 180px;
+}
+.search input:focus {
+    outline: 2px solid rgba(255, 0, 85, 0.2);
+}
+.login button {
+    padding: 6px 20px;
+    border: none;
+    background-image: linear-gradient(100deg, rgb(255, 106, 0), rgb(255, 0, 93));
+    color: #fff;
+    font-weight: bold;
+    border-radius: 48px;
+}
